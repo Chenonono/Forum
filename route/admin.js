@@ -14,14 +14,15 @@ admin.get('/logout', require('../app/controller/admin/logout'));
 
 //用户列表
 admin.get('/user', require('../app/controller/admin/userPage'));
-//实现增加用户功能
-admin.post('/user-edit', require('../app/controller/admin/user-edit-fn'));
+//实现增加用户功能（先进入信息模板）
+admin.get('/user-add', require('../app/controller/admin/user-edit'));
+admin.post('/user-add', require('../app/controller/admin/user-add'));
 //实现删除用户功能
-admin.post('/udelete', require('../app/controller/admin/user-delete'));
-//实现修改用户功能
-admin.get('/user-edit', require('../app/controller/admin/user-edit'));
+admin.get('/user-delete', require('../app/controller/admin/user-delete'));
 //实现修改用户功能
 admin.post('/user-modify', require('../app/controller/admin/user-modify'));
+//实现查看用户功能
+admin.get('/user-edit', require('../app/controller/admin/user-edit'));
 
 //文章列表
 admin.get('/article', require('../app/controller/admin/article'));
@@ -30,5 +31,5 @@ admin.post('/article-add', require('../app/controller/admin/article-add'))
 //实现删除文章功能
 admin.post('/adelete', require('../app/controller/admin/article-delete'))
 //实现修改文章功能
-admin.post('/article-edit', require('../app/controller/admin/article-edit'));
+admin.get('/article-edit', require('../app/controller/admin/article-edit'));
 module.exports = admin;
