@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 //导入home,admin模块
 const home = require('./route/home');
-//const admin = require('./route/admin');
+const admin = require('./route/admin');
 
 //导入其他模块
 const path = require('path');
@@ -44,7 +44,7 @@ template.defaults.imports.dateFormat = dateFormat;
 //匹配路由的请求路径
 app.use('/', home);
 app.use('/home', home);
-//app.use('/admin', admin);
+app.use('/admin', admin);
 
 //监听端口
 app.listen(10201, () => {
