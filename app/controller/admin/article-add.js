@@ -16,7 +16,6 @@ module.exports = (req, res) => {
             // 2.fields 对象类型 保存普通表单数据
             // 3.files 对象类型 保存了和上传文件相关的数据
             //res.send(files.cover.filepath.split('public')[1])
-
             await Article.create({
                 title: fields.title,
                 author: fields.author,
