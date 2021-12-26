@@ -12,6 +12,7 @@ const session = require('express-session');
 const dateFormat = require('dateformat');
 const morgan = require('morgan');
 const config = require('config');
+const favicon = require('serve-favicon');
 //导入模板引擎
 const template = require('art-template');
 
@@ -26,9 +27,6 @@ app.use(bodyParser.urlencoded({
 //配置session
 app.use(session({ secret: 'secret key' }));
 
-//开放静态资源文件
-app.use(express.static(path.join(__dirname, 'public')));
-
 //express模板所在的位置
 app.set('views', path.join(__dirname, 'app/views'));
 
@@ -40,6 +38,11 @@ app.engine('art', require('express-art-template'));
 
 //导入日期
 template.defaults.imports.dateFormat = dateFormat;
+
+//开放静态资源文件
+app.use('/',express.static(path.join(__dirname, 'public')));
+//标题显示图标
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 //匹配路由的请求路径
 app.use('/', home);
