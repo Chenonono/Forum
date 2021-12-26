@@ -1,4 +1,4 @@
-const { User } = require('../../app/model/user');
+const { User } = require('../../model/user');
 module.exports = async(req, res) => {
     //接受客户端传递过来的当前页的参数
     let page = req.query.page || 1;

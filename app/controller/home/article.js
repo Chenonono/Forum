@@ -1,7 +1,7 @@
 // 导入文章集合构造函数
-const { Article } = require('../../app/model/article');
+const { Article } = require('../../model/article');
 // 导入评论集合构造函数
-const { Comment } = require('../../app/model/comment');
+const { Comment } = require('../../model/comment');
 
 module.exports = async(req, res) => {
     // 接收客户端传递过来的文章id值

@@ -4,7 +4,7 @@ const express = require('express');
 const home = express.Router();
 
 //创建二级路由
-home.get('/', require('./home/index'));
-home.get('/article', require('./home/article'));
-home.post('/comment', require('./home/comment'));
+home.get('/', require('../app/controller/home/index'));
+home.get('/article', require('../app/controller/home/article'));
+home.post('/comment', require('../app/controller/home/comment'));
 module.exports = home;

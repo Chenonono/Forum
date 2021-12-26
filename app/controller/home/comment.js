@@ -1,5 +1,5 @@
 //将评论集合构造函数进行导入
-const { Comment } = require('../../app/model/comment');
+const { Comment } = require('../../model/comment');
 
 module.exports = async(req, res) => {
     //接收客户端传递过来的请求参数

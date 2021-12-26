@@ -1,4 +1,4 @@
-const { Article } = require('../../app/model/article');
+const { Article } = require('../../model/article');
 
 //导入分页模块
 const pagination = require('mongoose-sex-page');

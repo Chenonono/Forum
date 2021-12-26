@@ -1,4 +1,4 @@
-const { User } = require('../../app/model/user');
+const { User } = require('../../model/user');
 
 module.exports = async(req, res) => {
     //获取要删除的用户id

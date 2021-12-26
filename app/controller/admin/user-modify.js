@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const { User } = require('../../app/model/user');
+const { User } = require('../../model/user');
 module.exports = async(req, res, next) => {
     //解构
     const { username, email, role, state, password } = req.body;

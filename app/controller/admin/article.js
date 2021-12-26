@@ -1,5 +1,5 @@
 //将文章集合的构造函数导入到当前文件中
-const { Article } = require('../../app/model/article');
+const { Article } = require('../../model/article');
 //导入mongoose-sex-page模块
 const pagination = require('mongoose-sex-page');
 

@@ -1,7 +1,7 @@
 //引入formidable第三方模块
 const formidable = require('formidable');
 const path = require('path');
-const { Article } = require('../../app/model/article')
+const { Article } = require('../../model/article')
 
 module.exports = (req, res) => {
     //创建表单解析对象
