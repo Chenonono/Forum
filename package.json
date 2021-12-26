@@ -1,0 +1,17 @@
+{
+  "name": "forum",
+  "version": "1.0.0",
+  "description": "WebApp for Forum use nodejs and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "forum"
+  ],
+  "author": "cjy",
+  "license": "GNU",
+  "git repository": "https://github.com/Chenonono/Forum"
+}
