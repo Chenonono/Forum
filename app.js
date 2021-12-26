@@ -46,6 +46,7 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 //匹配路由的请求路径
 app.use('/', home);
+app.use('/home', home);
 app.use('/admin', admin);
 
 //监听端口

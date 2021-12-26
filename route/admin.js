@@ -9,22 +9,26 @@ const admin = express.Router();
 admin.get('/login', require('../app/controller/admin/loginPage'));
 //实现登录功能
 admin.post('/login', require('../app/controller/admin/login'));
-//创建用户列表路由
-admin.get('/user', require('../app/controller/admin/userPage'));
 //实现退出功能
 admin.get('/logout', require('../app/controller/admin/logout'));
-//实现用户编辑功能
-admin.get('/user-edit', require('../app/controller/admin/user-edit'));
-//实现用户添加功能
+
+//用户列表
+admin.get('/user', require('../app/controller/admin/userPage'));
+//实现增加用户功能
 admin.post('/user-edit', require('../app/controller/admin/user-edit-fn'));
-//实现用户修改功能
+//实现删除用户功能
+admin.post('/udelete', require('../app/controller/admin/user-delete'));
+//实现修改用户功能
+admin.get('/user-edit', require('../app/controller/admin/user-edit'));
+//实现修改用户功能
 admin.post('/user-modify', require('../app/controller/admin/user-modify'));
-//实现用户删除功能
-admin.get('/delete', require('../app/controller/admin/user-delete'));
+
 //文章列表
 admin.get('/article', require('../app/controller/admin/article'));
-//添加文章
-admin.get('/article-edit', require('../app/controller/admin/article-edit'));
-//实现文章添加功能
+//实现增加文章功能
 admin.post('/article-add', require('../app/controller/admin/article-add'))
+//实现删除文章功能
+admin.post('/adelete', require('../app/controller/admin/article-delete'))
+//实现修改文章功能
+admin.post('/article-edit', require('../app/controller/admin/article-edit'));
 module.exports = admin;

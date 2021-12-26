@@ -11,6 +11,5 @@ module.exports = async(req, res) => {
     // 查询当前文章所对应的评论信息
     let comments = await Comment.find({ aid: id });
 
-    // res.send('欢迎来到博客文章详情页面')
     res.render('home/article.art', { article, comments });
 }
