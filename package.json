@@ -13,5 +13,13 @@
   ],
   "author": "cjy",
   "license": "GNU",
-  "git repository": "https://github.com/Chenonono/Forum"
+  "git repository": "https://github.com/Chenonono/Forum",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "config": "^3.3.6",
+    "dateformat": "^4.6.3",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "morgan": "^1.10.0"
+  }
 }
