@@ -208,3 +208,18 @@ textarea {
 	display: none;
 }
 /* 登录界面结束 */
+
+/* 注册界面开始 */
+
+.form-container {
+	padding: 20px;
+	background: #FFF;
+	box-shadow: 1px 1px 3px #ccc;
+	width: 800px;
+	position:fixed;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+/* 注册界面结束 */

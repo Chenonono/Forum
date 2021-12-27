@@ -14,4 +14,9 @@ home.get('/login', require('../app/controller/home/user-loginPage'));
 home.post('/login', require('../app/controller/home/user-login'));
 //实现退出功能
 home.get('/logout', require('../app/controller/home/logout'));
+
+//普通用户注册
+home.get('/register', require('../app/controller/home/user-registerPage'));
+//实现注册功能
+home.post('/register', require('../app/controller/home/user-register'));
 module.exports = home;

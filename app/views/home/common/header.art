@@ -16,6 +16,9 @@
 					<a href="/home/login">用户登录</a>
 				</li>
 				<li>
+					<a href="/home/register">用户注册</a>
+				</li>
+				<li>
 					<a href="/admin/login">管理员登录</a>
 				</li>
 			<%} else { %>
