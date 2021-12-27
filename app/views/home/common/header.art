@@ -11,12 +11,25 @@
 			<li>
 				<a class="active" href="/">首页</a>
 			</li>
-			<li>
-				<a href="/home/login">用户登录</a>
-			</li>
-			<li>
-				<a href="/admin/login">管理员登录</a>
-			</li>
+			<% if( !userInfo == 1){ %>
+				<li>
+					<a href="/home/login">用户登录</a>
+				</li>
+				<li>
+					<a href="/admin/login">管理员登录</a>
+				</li>
+			<%} else { %>
+				<li>
+					<% if(userInfo.role == "admin"){ %>
+						<a href="/admin/user">{{userInfo && userInfo.username}}</a>
+					<% } else { %>
+						<a href="/">{{userInfo && userInfo.username}}</a>
+					<% } %>
+				</li>
+				<li>
+					<a href="/home/logout">登出</a>
+				</li>
+			<% } %>
 		</ul>
 		<!-- 网站导航结束 -->
 	</div>

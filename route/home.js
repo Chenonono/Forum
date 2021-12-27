@@ -12,4 +12,6 @@ home.post('/comment', require('../app/controller/home/comment'));
 home.get('/login', require('../app/controller/home/user-loginPage'));
 //实现登录功能
 home.post('/login', require('../app/controller/home/user-login'));
+//实现退出功能
+home.get('/logout', require('../app/controller/home/logout'));
 module.exports = home;
