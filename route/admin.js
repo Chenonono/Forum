@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 //创建论坛展示页面路由
 const admin = express.Router();
 
-//创建二级路由
+//管理员登录
 admin.get('/login', require('../app/controller/admin/loginPage'));
 //实现登录功能
 admin.post('/login', require('../app/controller/admin/login'));

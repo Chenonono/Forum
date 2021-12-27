@@ -7,4 +7,9 @@ const home = express.Router();
 home.get('/', require('../app/controller/home/index'));
 home.get('/article', require('../app/controller/home/article'));
 home.post('/comment', require('../app/controller/home/comment'));
+
+//普通用户登录
+home.get('/login', require('../app/controller/home/user-loginPage'));
+//实现登录功能
+home.post('/login', require('../app/controller/home/user-login'));
 module.exports = home;

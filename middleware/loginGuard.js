@@ -2,7 +2,7 @@
 const guard = (req, res, next) => {
     //判断用户登录状态
     if (req.url != '/login' && !req.session.username) {
-        res.redirect('/admin/login');
+        res.redirect('/');
     } else {
         next();
     }

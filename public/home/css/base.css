@@ -157,3 +157,54 @@ textarea {
 	font-weight: bold;
 }
 /* 文章标题结束 */
+
+/* 登录界面开始 */
+.login-body {
+	background: #f5f5dc;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.login-container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -66%);
+}
+
+.login-container .title {
+	color: #000;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.login-container .login {
+	background: #FFF;
+	width: 500px;
+	height: 220px;
+	box-shadow: 0px 0px 3px 1px #e1e1e1;
+	border-top: 2px solid #1c5de7;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.form-group:last-child {
+	margin-bottom: 0;
+}
+
+.tips {
+	margin-top: 20px;
+	background: #f2dede;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+
+.tips:empty {
+	display: none;
+}
+/* 登录界面结束 */
