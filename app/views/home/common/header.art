@@ -3,7 +3,7 @@
 	<div class="w1100">
 		<!-- 网站logo开始 -->
 		<h1 class="logo fl">
-			<a href="/"><img src="home/images/logo.png" alt="电影论坛"></a>
+			<a href="/"><img src="logo.png" alt="电影论坛"></a>
 		</h1>
 		<!-- 网站logo结束 -->
 		<!-- 网站导航开始 -->

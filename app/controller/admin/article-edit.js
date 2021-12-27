@@ -7,8 +7,8 @@ module.exports = async(req, res) => {
         let article = await Article.findOne({ _id: id });
         res.render('admin/article-edit', {
             message: message,
-            user: user,
-            link: '/admin/user-modify?id=' + id,
+            article: article,
+            link: '/admin/article-modify?id=' + id,
             button: '修改'
         });
     } else {

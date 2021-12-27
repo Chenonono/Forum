@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-	color: #ff7300;
+	color: #02c8fa;
 }
 
 input, textarea {
@@ -90,6 +90,7 @@ textarea {
 
 .logo a,
 .logo img {
+	margin: center;
 	display: block;
 }
 /* 网站logo结束 */
@@ -144,7 +145,7 @@ textarea {
 }
 
 .article-info .author {
-	color: #ff7300;
+	color: #02c8fa;
 }
 
 /* 文章信息结束 */

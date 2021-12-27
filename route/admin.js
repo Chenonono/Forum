@@ -32,5 +32,7 @@ admin.post('/article-add', require('../app/controller/admin/article-add'))
 //实现删除文章功能
 admin.get('/article-delete', require('../app/controller/admin/article-delete'))
 //实现修改文章功能
+admin.post('/article-modify', require('../app/controller/admin/article-modify'));
+//实现查看文章功能
 admin.get('/article-edit', require('../app/controller/admin/article-edit'));
 module.exports = admin;

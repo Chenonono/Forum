@@ -26,7 +26,7 @@
 }
 
 .article-header h3:hover {
-	color: #ff7300;
+	color: #02c8fa;
 }
 
 .article-content {
@@ -53,10 +53,6 @@
 
 /* 侧边栏框架结束 */
 
-/* 侧边栏内容开始 */
-.section {
-	
-}
 
 .section h4 {
 	font-size: 14px;
@@ -78,15 +74,12 @@
 }
 
 .links li a:hover {
-	color: #ff7300;
+	color: #02c8fa;
 }
 
 /* 侧边栏内容结束 */
 
 /* 评论开始 */
-.article-comment {
-
-}
 
 .article-comment h4 {
 	font-size: 16px;

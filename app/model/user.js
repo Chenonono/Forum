@@ -37,9 +37,9 @@ async function creatUser() {
     //const salt = await bcrypt.genSalt(10);
     //const pass = await bcrypt.hash('123456', salt)
     const user = await User.create({
-        username: 'Jannik',
-        email: 'Jannik@item.com',
-        password: '123456',
+        username: 'chenjy',
+        email: 'chenjy@email.com',
+        password: 'admin',
         role: 'admin',
         state: 0
 
