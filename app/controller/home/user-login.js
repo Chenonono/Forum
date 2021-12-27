@@ -23,15 +23,19 @@ module.exports = async(req, res) => {
     if (user) {
         //密码等于数据库的密码
         //password == user.password
-        if (password==user.password) {
+        if (password==user.password && user.state == 0) {
             //登录成功
             req.session.username = user.username;
             // res.send('登录成功');
             req.app.locals.userInfo = user;
             //跳转用户类别页面
             res.redirect('/');
-        } else {
-            res.status(400).render('home/error', { msg: '邮件或者密码错误！' })
+        }
+        else if(password != user.password) {
+            res.status(400).render('home/error', { msg: '用户密码错误！' })
+        }
+        else if(user.state == 1) {
+            res.status(400).render('home/error', { msg: '用户已被禁用！' })
         }
     } else {
         //没有查询到用户

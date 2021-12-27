@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>用户登录</title>
+    <title>管理员登录</title>
     <link rel="stylesheet" href="/admin/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/admin/css/base.css">
 </head>
