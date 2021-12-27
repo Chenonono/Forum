@@ -14,5 +14,5 @@ module.exports = async(req, res) => {
     });
 
     //将页面重定向回文章详情页面
-    res.redirect('/home/article?id=' + aid);
+    res.redirect('/article?id=' + aid);
 }
