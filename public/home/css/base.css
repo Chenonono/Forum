@@ -4,7 +4,7 @@ body, ul, h1, h3, h4, p {
 }
 
 body {
-	font-size: 12px;
+	font-size: 15px;
 	font-family: 'Microsoft YaHei', 'Arial';
 	background: #f3f3df;
 	color: #555;
@@ -207,12 +207,23 @@ textarea {
 .tips:empty {
 	display: none;
 }
+
+.cancel {
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.2s;
+}
+
+.cancel:hover {
+	text-decoration: none;
+	color: #fff;
+}
 /* 登录界面结束 */
 
 /* 注册界面开始 */
 
 .form-container {
-	padding: 20px;
+	padding: 50px;
 	background: #FFF;
 	box-shadow: 1px 1px 3px #ccc;
 	width: 800px;

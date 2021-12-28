@@ -23,6 +23,7 @@
                         <input name="password" type="password" class="form-control " placeholder="请输入密码 ">
                     </div>
                     <button type="submit " class="btn btn-primary ">登录</button>
+                    <button class="btn btn-primary "><a href="/" class="cancel">取消</a></button>
                 </form>
             </div>
             <div class="tips "></div>

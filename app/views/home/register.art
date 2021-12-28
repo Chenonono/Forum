@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    {{include './common/header.art'}}
     <div class="content">
         <div class="main">
             <!-- 分类标题 -->
@@ -17,7 +18,7 @@
                 <p class="tips">{{message}}</p>
             </div>
             <!-- /分类标题 -->
-            <form class="form-container" action="/home/register" method="post">
+            <form class="form-container" action="/register" method="post">
                 <div class="form-group">
                     <label>用户名</label>
                     <input type="text" class="form-control" placeholder="请输入用户名" name="username" value="{{user && user.username}}">

@@ -13,10 +13,10 @@
 			</li>
 			<% if( !userInfo == 1){ %>
 				<li>
-					<a href="/home/login">用户登录</a>
+					<a href="/login">用户登录</a>
 				</li>
 				<li>
-					<a href="/home/register">用户注册</a>
+					<a href="/register">用户注册</a>
 				</li>
 				<li>
 					<a href="/admin/login">管理员登录</a>
@@ -30,7 +30,7 @@
 					<% } %>
 				</li>
 				<li>
-					<a href="/home/logout">登出</a>
+					<a href="/logout">登出</a>
 				</li>
 			<% } %>
 		</ul>
